@@ -14,6 +14,7 @@ import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import Auth from "./pages/Auth";
 import Profile from "./pages/Profile";
+import AdminDashboard from "./pages/AdminDashboard";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
