@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { ShoppingCart, Heart, Search, Menu, X, User } from "lucide-react";
+import { ShoppingCart, Heart, Search, Menu, X, User, LogIn } from "lucide-react";
 import { useCart } from "@/context/CartContext";
+import { useAuth } from "@/context/AuthContext";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
