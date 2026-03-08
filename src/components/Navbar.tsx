@@ -40,9 +40,9 @@ const Navbar = () => {
             <Link to="/products" className="p-2 text-muted-foreground hover:text-foreground transition-colors">
               <Search className="w-5 h-5" />
             </Link>
-            <button className="p-2 text-muted-foreground hover:text-foreground transition-colors hidden sm:block">
-              <User className="w-5 h-5" />
-            </button>
+            <Link to={user ? "/profile" : "/auth"} className="p-2 text-muted-foreground hover:text-foreground transition-colors hidden sm:block">
+              {user ? <User className="w-5 h-5" /> : <LogIn className="w-5 h-5" />}
+            </Link>
             <button className="p-2 text-muted-foreground hover:text-foreground transition-colors hidden sm:block">
               <Heart className="w-5 h-5" />
             </button>
